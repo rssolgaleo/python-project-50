@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/rssolgaleo/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/rssolgaleo/python-project-50/actions)
 
-# Вычислитель отличий <img src="/photos/photo.png" width="35">
+# Вычислитель отличий
 
 Вычислитель отличий – это программа, которая определяет разницу между двумя структурами данных.
 
@@ -10,7 +10,7 @@
 
 ---
 
-# Difference Finder <img src="/photos/photo.png" width="35">
+# Difference Finder
 
 Difference Finder is a program that identifies the differences between two data structures.
 
