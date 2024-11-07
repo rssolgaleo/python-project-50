@@ -2,10 +2,10 @@ import argparse
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Compares two configuration files and shows a difference.')
+    parser = argparse.ArgumentParser(description='Diff two config files.')
     parser.add_argument('first_file', help=' ')
     parser.add_argument('second_file', help=' ')
-    parser.add_argument('-f', '--format', help='set format of output', default="stylish")
+    parser.add_argument('-f', '--format', help='out format', default="stylish")
     return parser.parse_args()
 
 
