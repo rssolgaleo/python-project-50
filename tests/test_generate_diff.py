@@ -17,8 +17,8 @@ RESULT = {
 @pytest.mark.parametrize(
     'path1, path2, diff',
     [
-        (PLAIN['file1.json'], PLAIN['file2.json'], RESULT['result1'])
-        (PLAIN['file2.yaml'], PLAIN['file2.json'], RESULT['result1'])
+        (PLAIN['file1.json'], PLAIN['file2.json'], RESULT['result1']),
+        (PLAIN['file1.yaml'], PLAIN['file2.yaml'], RESULT['result1'])
     ]
 )
 def test_generate_diff(path1, path2, diff):
