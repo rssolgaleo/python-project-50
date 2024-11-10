@@ -1,6 +1,3 @@
-import json
-
-
 def build_gendiff_tree(data1, data2):
     result = []
     keys = data1.keys() | data2.keys()
