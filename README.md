@@ -9,8 +9,8 @@
 
 ## Демонстрация
 Сравнение плоских файлов (JSON, YAML)
-[Демонстрация 1](https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S)
-[Демонстрация 2](https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ)
+<a href="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S" target="_blank"><img src="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S.svg" /></a>
+<a href="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ" target="_blank"><img src="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ.svg" /></a>
    
 ---
 
@@ -20,6 +20,5 @@ Difference Finder is a program that identifies the differences between two data 
 
 ## Demonstration
 * Comparison of flat files (JSON, YAML)
-<a href="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S" target="_blank"></a>
-<a href="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ" target="_blank"></a>
-
+<a href="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S" target="_blank"><img src="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S.svg" /></a>
+<a href="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ" target="_blank"><img src="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ.svg" /></a>
