@@ -9,8 +9,9 @@
 
 ## Демонстрация
 Сравнение плоских файлов (JSON, YAML)
-<a href="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S" target="_blank"></a>
-<a href="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ" target="_blank"></a>
+[Демонстрация 1](https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S)
+[Демонстрация 2](https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ)
+   
 ---
 
 # Difference Finder
