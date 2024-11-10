@@ -9,7 +9,7 @@
 
 ## Демонстрация
 * [Сравнение плоских файлов (JSON)](https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S)
-
+* [Cравнение плоских файлов (YAML)](https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ)
 ---
 
 # Difference Finder
@@ -18,3 +18,4 @@ Difference Finder is a program that identifies the differences between two data 
 
 ## Demonstration
 * [Comparison of flat files (JSON)](https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S)
+* [Comparison of flat files (YAML)](https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ)
