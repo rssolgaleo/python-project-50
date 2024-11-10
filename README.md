@@ -8,8 +8,9 @@
 Вычислитель отличий – это программа, которая определяет разницу между двумя структурами данных.
 
 ## Демонстрация
-* [Сравнение плоских файлов (JSON)](https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S)
-* [Cравнение плоских файлов (YAML)](https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ)
+Сравнение плоских файлов (JSON, YAML)
+<a href="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S" target="_blank"></a>
+<a href="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ" target="_blank"></a>
 ---
 
 # Difference Finder
@@ -17,5 +18,7 @@
 Difference Finder is a program that identifies the differences between two data structures.
 
 ## Demonstration
-* [Comparison of flat files (JSON)](https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S)
-* [Comparison of flat files (YAML)](https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ)
+* Comparison of flat files (JSON, YAML)
+<a href="https://asciinema.org/a/XW1NuljsLBOzPnhVOYS0fjl1S" target="_blank"></a>
+<a href="https://asciinema.org/a/a7DFkgWiG9WnbiXdjPDRtQvHQ" target="_blank"></a>
+
