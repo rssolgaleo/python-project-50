@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/rssolgaleo/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/rssolgaleo/python-project-50/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/3de92b6602273504cee1/maintainability)](https://codeclimate.com/github/rssolgaleo/python-project-50/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c72a80e578e736f19581/maintainability)](https://codeclimate.com/github/rssolgaleo/python-project-50/maintainability)
 
 # Вычислитель отличий
 
