@@ -9,8 +9,14 @@ PLAIN = {
     'file2.yaml': 'tests/fixtures/file2.yaml',
 }
 
+NESTED = {
+    'file3.json': 'tests/fixtures/file3.json',
+    'file4.json': 'tests/fixtures/file4.json',
+}
+
 RESULT = {
-    'result1': 'tests/fixtures/result_json_and_yaml.txt'
+    'result1': 'tests/fixtures/result1.txt',
+    'result2': 'tests/fixtures/result2.txt',
 }
 
 
