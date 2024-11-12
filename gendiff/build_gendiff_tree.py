@@ -1,17 +1,40 @@
 def build_gendiff_tree(data1, data2):
-    result = []
+    diff_tree = []
     keys = data1.keys() | data2.keys()
 
     for key in sorted(keys):
         if key not in data1:
-            result.append(f"+ {key}: {data2[key]}")
+            diff_tree.append({
+                "name": key,
+                "status": "added",
+                "value": data2[key]
+            })
         elif key not in data2:
-            result.append(f"- {key}: {data1[key]}")
+            diff_tree.append({
+                "name": key,
+                "status": "deleted",
+                "value": data1[key]
+            })
+        elif isinstance(data1[key], dict) and isinstance(data2[key], dict):
+            # Рекурсивно строим дерево для вложенных словарей
+            children = build_gendiff_tree(data1[key], data2[key])
+            diff_tree.append({
+                "name": key,
+                "status": "nested",
+                "children": children
+            })
         elif data1[key] != data2[key]:
-            result.append(f"- {key}: {data1[key]}")
-            result.append(f"+ {key}: {data2[key]}")
+            diff_tree.append({
+                "name": key,
+                "status": "changed",
+                "old_value": data1[key],
+                "new_value": data2[key]
+            })
         else:
-            result.append(f"  {key}: {data1[key]}")
+            diff_tree.append({
+                "name": key,
+                "status": "unchanged",
+                "value": data1[key]
+            })
 
-    diff = "{\n " + "\n ".join(result) + "\n}"
-    return diff
+    return diff_tree
