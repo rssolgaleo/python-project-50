@@ -16,7 +16,6 @@ def build_gendiff_tree(data1, data2):
                 "value": data1[key]
             })
         elif isinstance(data1[key], dict) and isinstance(data2[key], dict):
-            # Рекурсивно строим дерево для вложенных словарей
             children = build_gendiff_tree(data1[key], data2[key])
             diff_tree.append({
                 "name": key,
@@ -36,5 +35,4 @@ def build_gendiff_tree(data1, data2):
                 "status": "unchanged",
                 "value": data1[key]
             })
-
     return diff_tree
