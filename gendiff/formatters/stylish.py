@@ -33,8 +33,8 @@ def format_diff_unit(unit_diff, depth):
     elif status == 'unchanged':
         return f"{indent}{DEF}{to_str(name, unit_diff['value'], depth)}"
     elif status == 'nested':
-       return f"{indent}{DEF}{name}: " \
-              f"{make_diff(unit_diff['children'], depth + 1)}"
+       return (f"{indent}{DEF}{name}: "
+              f"{make_diff(unit_diff['children'], depth + 1)}")
     elif status == 'changed':
         return (f"{indent}{DEL}{to_str(name, unit_diff['old_value'], depth)}\n"
                 f"{indent}{ADD}{to_str(name, unit_diff['new_value'], depth)}")
