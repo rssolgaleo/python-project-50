@@ -39,4 +39,5 @@ RESULT = {
     ]
 )
 def test_generate_diff_1(path1, path2, format, diff):
+    print(generate_diff)
     assert generate_diff(path1, path2, format) == open(diff).read()
