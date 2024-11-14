@@ -1,15 +1,11 @@
-import argparse
+#!/usr/bin/env python3
+from gendiff.cli import parse_args
 from gendiff.generate_diff import generate_diff
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Diff two config files.')
-    parser.add_argument('first_file', help='Path to the first JSON file')
-    parser.add_argument('second_file', help='Path to the second JSON file')
-    parser.add_argument('-f', '--format', help='out format', default="stylish")
-    args = parser.parse_args()
-    diff = generate_diff(args.first_file, args.second_file, args.format)
-    print(diff)
+    args = parse_args()
+    print(generate_diff(args.first_file, args.second_file, args.format))
 
 
 if __name__ == "__main__":
