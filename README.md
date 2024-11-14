@@ -12,7 +12,9 @@
 [![asciicast](https://asciinema.org/a/688319.svg)](https://asciinema.org/a/688319)
 * Сравнение файлов в плоском форматировании
 [![asciicast](https://asciinema.org/a/689663.svg)](https://asciinema.org/a/689663)
-   
+* Сравнение файлов в формате JSON
+[![asciicast](https://asciinema.org/a/689737.svg)](https://asciinema.org/a/689737)
+
 ---
 
 # Difference Finder
@@ -24,3 +26,5 @@ Difference Finder is a program that identifies the differences between two data 
 [![asciicast](https://asciinema.org/a/688319.svg)](https://asciinema.org/a/688319)
 * Comparing flat formatted files
 [![asciicast](https://asciinema.org/a/689663.svg)](https://asciinema.org/a/689663)
+* Comparing files in JSON format
+[![asciicast](https://asciinema.org/a/689737.svg)](https://asciinema.org/a/689737)

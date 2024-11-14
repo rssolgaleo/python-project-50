@@ -15,10 +15,12 @@ NESTED = {
 }
 
 RESULT = {
-    'result1': 'tests/fixtures/result1.txt',
-    'result2': 'tests/fixtures/result2.txt',
-    'result3': 'tests/fixtures/result3.txt',
-    'result4': 'tests/fixtures/result4.txt',
+    'result1': 'tests/fixtures/result1_stylish.txt',
+    'result2': 'tests/fixtures/result2_stylish.txt',
+    'result3': 'tests/fixtures/result3_plain.txt',
+    'result4': 'tests/fixtures/result4_plain.txt',
+    'result5': 'tests/fixtures/result5_json.txt',
+    'result6': 'tests/fixtures/result6_json.txt',
 }
 
 
@@ -31,6 +33,9 @@ RESULT = {
         (NESTED['file3.json'], NESTED['file4.json'], 'plain', RESULT['result3']),
         (PLAIN['file1.json'], PLAIN['file2.json'], 'plain', RESULT['result4']),
         (PLAIN['file1.yaml'], PLAIN['file2.yaml'], 'plain', RESULT['result4']),
+        (PLAIN['file1.yaml'], PLAIN['file2.yaml'], 'json', RESULT['result6']),
+        (PLAIN['file1.json'], PLAIN['file2.json'], 'json', RESULT['result6']),
+        (NESTED['file3.json'], NESTED['file4.json'], 'json', RESULT['result5']),
     ]
 )
 def test_generate_diff_1(path1, path2, format, diff):
