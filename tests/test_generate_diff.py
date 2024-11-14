@@ -17,16 +17,21 @@ NESTED = {
 RESULT = {
     'result1': 'tests/fixtures/result1.txt',
     'result2': 'tests/fixtures/result2.txt',
+    'result3': 'tests/fixtures/result3.txt',
+    'result4': 'tests/fixtures/result4.txt',
 }
 
 
 @pytest.mark.parametrize(
-    'path1, path2, diff',
+    'path1, path2, format, diff',
     [
-        (PLAIN['file1.json'], PLAIN['file2.json'], RESULT['result1']),
-        (PLAIN['file1.yaml'], PLAIN['file2.yaml'], RESULT['result1']),
-        (NESTED['file3.json'], NESTED['file4.json'], RESULT['result2']),
+        (PLAIN['file1.json'], PLAIN['file2.json'], 'stylish', RESULT['result1']),
+        (PLAIN['file1.yaml'], PLAIN['file2.yaml'], 'stylish', RESULT['result1']),
+        (NESTED['file3.json'], NESTED['file4.json'], 'stylish', RESULT['result2']),
+        (NESTED['file3.json'], NESTED['file4.json'], 'plain', RESULT['result3']),
+        (PLAIN['file1.json'], PLAIN['file2.json'], 'plain', RESULT['result4']),
+        (PLAIN['file1.yaml'], PLAIN['file2.yaml'], 'plain', RESULT['result4']),
     ]
 )
-def test_generate_diff(path1, path2, diff):
-    assert generate_diff(path1, path2) == open(diff).read()
+def test_generate_diff_1(path1, path2, format, diff):
+    assert generate_diff(path1, path2, format) == open(diff).read()
