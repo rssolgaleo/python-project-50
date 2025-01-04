@@ -8,7 +8,7 @@ def parse(path):
         content = file.read()
         _, extension = os.path.splitext(path)
         extension = extension.lower()
-        if extension in ['.yaml', '.yml']:
+        if extension in ('.yaml', '.yml'):
             return yaml.safe_load(content)
         elif extension == '.json':
             return json.loads(content)
