@@ -34,17 +34,13 @@ def format_diff_unit(unit_diff, depth):
         return f"{indent}{DEF}{to_str(name, unit_diff['value'], depth)}"
     elif status == 'nested':
         return (f"{indent}{DEF}{name}: "
-                f"{make_diff(unit_diff['children'], depth + 1)}")
+                f"{default_formatter(unit_diff['children'], depth + 1)}")
     elif status == 'changed':
         return (f"{indent}{DEL}{to_str(name, unit_diff['old_value'], depth)}\n"
                 f"{indent}{ADD}{to_str(name, unit_diff['new_value'], depth)}")
 
 
-def make_diff(diff_tree, depth=1):
+def default_formatter(diff_tree, depth=1):
     lines = [format_diff_unit(unit, depth) for unit in diff_tree]
     output = "{\n" + "\n".join(lines) + f"\n{DEF * (depth - 1)}}}"
     return output
-
-
-def default_formatter(diff_tree):
-    return make_diff(diff_tree)
