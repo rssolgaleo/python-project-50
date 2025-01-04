@@ -3,7 +3,7 @@ import yaml
 import os
 
 
-def parse(path):
+def parse(path: str) -> dict:
     with open(path) as file:
         content = file.read()
         _, extension = os.path.splitext(path)

@@ -1,4 +1,4 @@
-def to_plain_value(value):
+def to_plain_value(value: str) -> str:
     if value is None:
         return "null"
     elif isinstance(value, bool):
@@ -11,7 +11,7 @@ def to_plain_value(value):
         return str(value)
 
 
-def format_plain(diff_tree, parentkey=''):
+def format_plain(diff_tree: dict, parentkey: str = ''):
     lines = []
 
     for unit in diff_tree:
@@ -36,6 +36,6 @@ def format_plain(diff_tree, parentkey=''):
     return lines
 
 
-def plain_formatter(diff_tree):
+def plain_formatter(diff_tree: dict) -> str:
     lines = format_plain(diff_tree)
     return '\n'.join(lines)

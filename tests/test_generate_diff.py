@@ -38,5 +38,5 @@ RESULT = {
         (NESTED['file3.json'], NESTED['file4.json'], 'json', RESULT['result5']),
     ]
 )
-def test_generate_diff_1(path1, path2, format, diff):
+def test_generate_diff_1(path1, path2, format, diff) -> None:
     assert generate_output(path1, path2, format) == open(diff).read()

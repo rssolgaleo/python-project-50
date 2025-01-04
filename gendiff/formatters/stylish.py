@@ -1,7 +1,7 @@
 DEL, ADD, DEF = '  - ', '  + ', '    '
 
 
-def to_str(key, value, depth):
+def to_str(key: str, value: str, depth: int) -> str:
     if value is None:
         return f"{key}: null"
     elif isinstance(value, bool):
@@ -12,7 +12,7 @@ def to_str(key, value, depth):
         return f"{key}: {value}"
 
 
-def format_dict(key, value, depth):
+def format_dict(key: str, value: str, depth: int) -> str:
     indent = DEF * depth
     lines = [f"{key}: {{"]
     for k, v in value.items():
@@ -21,7 +21,7 @@ def format_dict(key, value, depth):
     return '\n'.join(lines)
 
 
-def format_diff_unit(unit_diff, depth):
+def format_diff_unit(unit_diff: str, depth: int) -> str:
     status = unit_diff['status']
     indent = DEF * (depth - 1)
     name = unit_diff['name']
@@ -40,7 +40,7 @@ def format_diff_unit(unit_diff, depth):
                 f"{indent}{ADD}{to_str(name, unit_diff['new_value'], depth)}")
 
 
-def default_formatter(diff_tree, depth=1):
+def default_formatter(diff_tree: list, depth: int = 1) -> dict:
     lines = [format_diff_unit(unit, depth) for unit in diff_tree]
     output = "{\n" + "\n".join(lines) + f"\n{DEF * (depth - 1)}}}"
     return output

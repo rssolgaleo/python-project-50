@@ -1,4 +1,4 @@
-def build_gendiff_tree(data1, data2):
+def build_gendiff_tree(data1: dict, data2: dict) -> list:
     diff_tree = []
     keys = data1.keys() | data2.keys()
 
